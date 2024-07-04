@@ -11,9 +11,15 @@
       margin-left: 30px;
       margin-bottom: 10px;
     }
+
+    #navbar {
+      transition: background-color 0.3s ease-in-out;
+    }
+
     .image-container {
       margin-top: 20px;
     }
+
     .image-container img {
       width: 100%;
       height: auto;
@@ -24,7 +30,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light rounded-bottom fixed-top"
-    style="background-color: rgb(139, 139, 248);">
+    style="background-color: rgb(164, 164, 253);">
     <div class="container-fluid">
       <a class="navbar-brand fs-2" href="#">EventMan</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -54,7 +60,7 @@
   <div style="position: relative;">
     <img src="wellcome.jpg" class="img-fluid" alt="...">
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-      <h1 style="font-size: 70px; color: white;  padding: 10px;">Welcome to the EventMen</h1>
+      <h1 style="font-size: 70px; color: white;  padding: 10px;">Welcome to the EventMan</h1>
     </div>
   </div>
   <h2 id="upcoming" class="mt-5">Upcoming Events</h2>
@@ -269,20 +275,20 @@
   <h2 class="my-3" id="booking" style="display: flex; justify-content: center; ">Booking Form</h2>
   <div class="container d-flex justify-content-center align-items-center centered-form ">
     <form
-      class="d-flex flex-column justify-content-center align-items-center w-50 p-4 border border border-primary rounded">
-      <div class="mb-3">
+      class="d-flex flex-column justify-content-center align-items-center w-100 p-4 border border border-primary rounded">
+      <div class="mb-3 w-50">
         <label for="exampleFormControlInput1" class="form-label">Name</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
       </div>
-      <div class="mb-3">
+      <div class="mb-3 w-50">
         <label for="exampleFormControlInput1" class="form-label">Email address</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
       </div>
-      <div class="mb-3">
+      <div class="mb-3 w-50">
         <label for="exampleFormControlInput1" class="form-label">Phone</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Phone number" />
       </div>
-      <div class="mb-3">
+      <div class="mb-3 w-50">
         <label for="exampleFormControlInput1" class="form-label">Event Type</label>
         <div class="input-group " style="width: fit-content;">
           <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
@@ -296,7 +302,7 @@
           </select>
         </div>
       </div>
-      <div class="mb-3">
+      <div class="mb-3 w-50">
         <label for="exampleFormControlInput1" class="form-label">Event Date</label>
         <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="" />
       </div>
